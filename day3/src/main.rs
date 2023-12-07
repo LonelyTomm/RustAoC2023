@@ -119,7 +119,7 @@ fn check_adjacency(i: usize,j: usize, lines: &Vec<&str>) -> bool {
     return false;
 }
 
-fn find_adjacent_stars<'a>(i: usize,j: usize, lines: &'a Vec<&'a str>) -> Vec<String> {
+fn find_adjacent_stars(i: usize,j: usize, lines: &Vec<&str>) -> Vec<String> {
     let mut vec_star_indexes = Vec::<String>::new();
 
     let ovi = if i == 0 { i } else { i - 1 };
